@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <input name="year" type="hidden" id="month-picker-year" />
+        <input name="month" type="hidden" id="month-picker-month" />
+
+        <div mbsc-page class="demo-month-select" style="background: none">
+            <div style="height:100%">
+                <div id="demo-month-select"></div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .week-picker {
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1.2em;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<script type="text/javascript" src="js/mobiscroll.javascript.min.js"></script>
+<script>
+    const locale = "{{ app()->getLocale() }}"; // get localization 
+
+</script>
+<script type="text/javascript" src="js/mobiscrollMonthLocale.js"></script>
+
+</html>
